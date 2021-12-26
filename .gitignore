@@ -1,2 +1,8 @@
 /db.sqlite3
 /geckodriver.log
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/testDrivenDevelopment.iml
+/.idea/vcs.xml
