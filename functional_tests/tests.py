@@ -7,6 +7,7 @@ import unittest
 
 MAX_WAIT = 10
 
+
 class NewVisitorTest(LiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -59,6 +60,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.wait_for_row_in_list_table('2: Use peacock feathers to make a fly')
 
         # satisfied, she goes back to sleep.
+
     def test_multiple_users_can_start_lists_at_different_urls(self):
         # Edith starts a new to-do list.
         self.browser.get(self.live_server_url)
@@ -101,4 +103,3 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn('Buy milk', page_text)
 
         # Satisfied, they both go back to sleep
-
