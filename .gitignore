@@ -7,3 +7,6 @@
 /.idea/testDrivenDevelopment.iml
 /.idea/vcs.xml
 /static/
+/.idea/deployment.xml
+/.idea/sshConfigs.xml
+/.idea/webServers.xml
