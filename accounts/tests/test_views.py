@@ -1,4 +1,5 @@
 from django.test import TestCase
+from unittest.mock import patch
 import accounts.views
 
 class SendLoginEmailViewTest(TestCase):
@@ -9,6 +10,7 @@ class SendLoginEmailViewTest(TestCase):
             'email': 'edith@example.com'
         })
         self.assertRedirects(response, '/')
+
 
     def test_sends_mail_to_address_from_post(self):
         self.send_mail_called = False
@@ -29,3 +31,4 @@ class SendLoginEmailViewTest(TestCase):
         self.assertEqual(self.subject, 'Your login link for Superlists')
         self.assertEqual(self.from_email, 'noreply@superlists')
         self.assertEqual(self.to_list, ['edith@example.com'])
+
