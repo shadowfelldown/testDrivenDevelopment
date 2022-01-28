@@ -59,6 +59,7 @@ class LoginTest(FunctionalTest):
             self.assertEqual(email.subject, subject)
             return email.body
         email_id = None
+        time.sleep(10)
         start = time.time()
         inbox = poplib.POP3_SSL('pop.gmail.com')
         try:
