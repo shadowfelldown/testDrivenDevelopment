@@ -4,7 +4,7 @@ from fabric.context_managers import settings, shell_env
 
 # TODO: check if this needs to be changed to venv
 def _get_manage_dot_py(host):
-    return f'~/sites/{host}/virtualenv/bin/python ~/sites/{host}/manage.py'
+    return f'~/sites/{host}/virtualenv/bin/python3.9 ~/sites/{host}/manage.py'
 
 
 def reset_database(host):
